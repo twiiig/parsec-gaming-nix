@@ -12,7 +12,7 @@ let
   '');
 
   parsecdSo = fetchurl {
-    url = "https://builds.parsecgaming.com/channel/release/binary/linux/gz/${parsecdSoName}";
+    url = "https://builds.parsec.app/package/parsec-linux.deb";
     sha256 = "sha256-${parsecdSoHash}";
   };
   a = stdenv.mkDerivation rec {
@@ -37,7 +37,7 @@ let
     version = "8";
 
     src = fetchurl {
-      url = "http://www.ijg.org/files/jpegsrc.v8.tar.gz";
+      url = "https://builds.parsec.app/package/parsec-linux.deb";
       sha256 = "sha256-F7qlt6yz8PjRXXPdJBbLk5ilWzM0pak1nSeNjealC6w=";
     };
 
